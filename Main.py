@@ -2,7 +2,7 @@ import os
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QMessageBox, QGraphicsScene, QGraphicsView, QLabel
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QPainter
 from UI.MainWindow import Ui_MainWindow
 from Settings import Settings
 import Util
@@ -107,7 +107,7 @@ class MainWindow(QMainWindow):
 
         # 将图表添加到图表视图
         chartView = QChartView(self.myLinechart)
-
+        chartView.setRenderHint(QPainter.Antialiasing)
         # 找到你在UI中放置QTabWidget的名称，例如tabWidget
         self.ui.LineChartLayout.addWidget(chartView)
 

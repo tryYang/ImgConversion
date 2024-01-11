@@ -55,7 +55,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -186,51 +186,100 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget_4" native="true">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>220</y>
-      <width>531</width>
-      <height>41</height>
+      <y>190</y>
+      <width>561</width>
+      <height>90</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QCheckBox" name="isShow_ssim">
-       <property name="text">
-        <string>SSIM</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
+      <widget class="QWidget" name="widget_5" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QRadioButton" name="isShow_ssim_2">
+          <property name="text">
+           <string>SSIM</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="isShow_psnr_2">
+          <property name="text">
+           <string>PSNR</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="isShow_mse_2">
+          <property name="text">
+           <string>MSE</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_showlinechart_2">
+          <property name="text">
+           <string>生成对比图</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="isShow_psnr">
-       <property name="text">
-        <string>PSNR</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="isShow_mse">
-       <property name="text">
-        <string>MSE</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_showlinechart">
-       <property name="text">
-        <string>生成趋势图</string>
-       </property>
+      <widget class="QWidget" name="widget_4" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="isShow_ssim">
+          <property name="text">
+           <string>SSIM</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="isShow_psnr">
+          <property name="text">
+           <string>PSNR</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="isShow_mse">
+          <property name="text">
+           <string>MSE</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_showlinechart">
+          <property name="text">
+           <string>生成趋势图</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </item>
     </layout>
